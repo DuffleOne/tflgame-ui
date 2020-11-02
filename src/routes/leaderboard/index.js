@@ -17,18 +17,20 @@ const Leaderboard = () => {
 		<Wrapper className="container">
 			<div className="row">
 				<div className="col">
-					<div className="d-flex">
-						<div className="d-flex">
-							<h1>Leaderboard</h1>
-						</div>
-						<MedalWrapper className="d-flex flex-row-reverse">
-							<PlatinumMedal className="fas fa-medal" />
-							<GoldMedal className="fas fa-medal" />
-							<SilverMedal className="fas fa-medal" />
-							<BronzeMedal className="fas fa-medal" />
-							<IronMedal className="fas fa-medal" />
-						</MedalWrapper>
-					</div>
+					<h1>Leaderboard</h1>
+				</div>
+				<div className="col">
+					<MedalWrapper className="d-flex flex-row-reverse">
+						<PlatinumMedal className="fas fa-medal" />
+						<GoldMedal className="fas fa-medal" />
+						<SilverMedal className="fas fa-medal" />
+						<BronzeMedal className="fas fa-medal" />
+						<IronMedal className="fas fa-medal" />
+					</MedalWrapper>
+				</div>
+			</div>
+			<div className="row">
+				<div className="col">
 					<table className={'table table-sm table-striped table-hover'}>
 						<thead>
 							<tr>
@@ -55,7 +57,9 @@ const Leaderboard = () => {
 	);
 }
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+	margin-top: 1rem;
+`;
 
 const MedalWrapper = styled.div`
 	width: 100%;
