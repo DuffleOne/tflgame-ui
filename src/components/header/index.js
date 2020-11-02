@@ -18,11 +18,6 @@ const Header = () => (
 				</ul>
 			</div>
 		</nav>
-		<div className="fixed-bottom">
-			<div class="alert alert-warning" role="alert" style="margin-bottom: 0;">
-				This site is under heavy construction. <a href="https://github.com/Duffleman/tflgame-go" class="alert-link">Follow along on GitHub</a>.
-		</div>
-		</div>
 	</div>
 );
 
