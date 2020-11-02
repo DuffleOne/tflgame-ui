@@ -40,7 +40,17 @@ const Leaderboard = () => {
 							</tr>
 						</thead>
 						<tbody>
-							{state === null && 'Loading...'}
+							{state === null && (
+								<tr>
+									<td className="text-center" colspan="3"><i>Loading...</i></td>
+								</tr>
+							)}
+
+							{state?.players.length === 0 && (
+								<tr>
+									<td className="text-center" colspan="3"><i>No players...</i></td>
+								</tr>
+							)}
 
 							{state?.players.map((player, index) => (
 								<tr key={player.userId}>

@@ -21,7 +21,7 @@ class Client {
 }
 
 const App = () => (
-	<ClientContext.Provider value={new Client('http://localhost:3000')}>
+	<ClientContext.Provider value={new Client('https://api.tflga.me')}>
 		<div id="app">
 			<Header />
 			<Router>
