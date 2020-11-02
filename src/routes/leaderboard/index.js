@@ -35,8 +35,8 @@ const Leaderboard = () => {
 						<thead>
 							<tr>
 								<th scope="col">Position</th>
-								<th scope="col">{'Handle'}</th>
-								<th scope="col">{'Score'}</th>
+								<th scope="col">Handle</th>
+								<th scope="col">Score</th>
 							</tr>
 						</thead>
 						<tbody>
